@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jeu</title>
+    <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <h1 id="logo">Accueil</h1>
+            <ul class="head-ul">
+                <li><button  class="button1"  onclick="location.href='/inscription.html';" >Inscription</button></li>
+                <li><button  class="button1"  onclick="location.href='/connexion.html';">Connexion</button></li>
+                <li>
+                    <div class="theme-switch-wrapper">
+                        <label for="checkbox" class="theme-switch">
+                            <input type="checkbox" id="checkbox">
+                            <div class="slider round"></div>
+                        </label>
+                        <em></em>
+                    </div>
+                </li>
+            </ul>
+    </nav>
+<center>
+<div class="image">
+   <img src="logofake.png" height="300px">
+
+   <div class="joli">Règles du jeu : </div>
+   <p>11 emplacements contigus séparent deux joueurs:</p>
+
+   <p>le 1er emplacement est celui du 1er joueur, le 11eme celui de l'autre.</p> 
+    <p>un lot est placé sur le 6eme emplacement (au milieu).</p>
+   <p>chaque joueur possède initialement 100 jetons.</p> 
+    <p>Chaque joueur mise en secret un certain nombre de jetons (entre 0 et 100).</p>
+    <p>si le joueur ne mise pas après 30 secondes, un pari aléatoire (valide) est généré par le serveur.</p>
+    
+   <p>On révèle alors les mises:</p> 
+    <p>Celui qui a misé le plus se voit retirer le montant de sa mise de ses jetons, mais voit le lot avancer d'un cran dans sa direction.</p>
+    <p>Par contre le joueur qui n'a pas remporté le pari garde sa mise et ne perd aucun jeton.</p>
+   <p>Les joueurs continuent à parier jusqu'à que :</p> 
+     <p> - le lot arrive sur l'emplacement d'un des joueurs</p>
+      <p>- ou que les deux joueurs n'aient plus de jetons</p>
+      <p>- ou après 20 paris maximum</p>
+    <p>Si le lot arrive sur l'emplacement d'un joueur, ce joueur remporte le lot!</p>
+ 
+  
+
+</div>
+</center>
+</body>
+<script src="darkmod.js"></script>
+
+<style></style>
+</html>
